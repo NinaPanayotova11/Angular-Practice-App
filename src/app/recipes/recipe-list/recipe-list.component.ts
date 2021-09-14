@@ -7,7 +7,6 @@ import { Recipe } from '../recipe.model';
   styleUrls: ['./recipe-list.component.css'],
 })
 export class RecipeListComponent implements OnInit {
-  @Output()
   recipes: Recipe[] = [
     new Recipe(
       'Cabbage with pulled pork',
@@ -16,7 +15,7 @@ export class RecipeListComponent implements OnInit {
     ),
     new Recipe(
       'Caesar salad ',
-      'Caesar salad with pork',
+      'Description of Caesar salad',
       'https://littlesunnykitchen.com/wp-content/uploads/Caesar-Salad-10-1024x1536.jpg'
     ),
   ];
